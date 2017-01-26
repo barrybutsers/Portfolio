@@ -1,0 +1,96 @@
+﻿<!--
+Opdracht:       Portfolio
+Auteur:         Lars van Alphen
+Aanmaakdatum:   startdatum + tijd>
+Bestandsnaam:   Quiz.html
+-->
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>
+            Quiz
+        </title>
+        <meta name="description" content="Quiz">
+        <meta name="keywords" content="Lars van Alphen, Quiz">
+        <!--Declareren van de tekenreeks-->
+        <meta charset="UTF-8">
+        <link href="../CSS/StyleSheet.css" rel="stylesheet" type="text/css">
+        <script src="../Js/jquery-3.1.1.js"></script>
+        <script src="../Js/Script.js"></script>
+    </head>
+    <body>
+        <!--Menu-->
+        <header>
+            <!--Hoofdtitel-->
+            <h1>Quiz</h1>
+            <!--Navigatie bar-->
+            <nav>
+                <ul id="menu">
+                    <li><a href="../Home/Index.html">Home</a></li>
+                    <li><a href="../Opleiding/Opleiding.html">Opleiding</a></li>
+                    <li><a href="../Project/Project.html">Projecten</a></li>
+                    <li><a href="../Vaardigheden/Vaardigheden.html">Vaardigheden</a></li>
+                    <li><a href="../Contact/Contact.php">Contact</a></li>
+                    <li><a href="../Cijferlijst/Inlog.php">Cijferlijst</a></li>
+                    <li><a href="../Quiz/Quiz.html">Quiz</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--Content-->
+        <section id="ruimte">
+            <article id="content">
+                <h2>Quiz</h2>
+                <!--Naam opgeven-->
+                <form id="inputName">
+                    <label>Voer hier u naam in om te beginnen.</label>
+                    <br>
+                    <input id="Name" type="text" value="">
+                    <br>
+                    <input id="Button" type="button" value="beginnen">
+                </form>
+                <!--Formulier starten-->
+                <form id="startReady" hidden="hidden">
+                    <label id="Greet"></label>
+                    <br>
+                    <label id="Rules">
+                        U Krijgt zometeen een aantal vragen te zien.
+                        Aan u de taak om deze zo goed mogenlijk te beantwoorden.
+                        Aan het einde van de quiz krijgt u u score te zien.
+                    </label>
+                    <br>
+                    <label id="Starten?">Bent u klaar om de quiz te starten?</label>
+                    <br>
+                    <input id="Start" type="button" value="Starten!">
+                </form>
+                <!--Quiz-->
+                <form id="Quiz" hidden="hidden">
+                    <label id="Questions"></label>
+                    <br />
+                    <label id="Options"></label>
+                    <br />
+                    <input id="A1" type="button" value="A" onclick="isCorrect('A')"/>
+                    <input id="A2" type="button" value="B" onclick="isCorrect('B')"/>
+                    <input id="A3" type="button" value="C" onclick="isCorrect('C')"/>
+                    <br />
+                    <label id="yayOrNay"></label>
+                    <label id="Timer"></label>
+                    <br />
+                    <label id="Score"></label>
+                    <br />
+                    <label id="Percentage"></label>
+                </form>
+                <!-- Eindscore-->
+                <form id="endForm" hidden="hidden">
+                    <p id="Congrats">Gefeliciteerd u eindscore is maar liefst</p>
+                    <h2 id="endScore" hidden="hidden"></h2>
+                </form>
+                
+            </article>
+        </section>
+        <!--Footer-->
+        <footer>
+            <p>&#169 <script>writeDate();</script>, Lars van Alphen</p>
+        </footer>
+    </body>
+</html>
