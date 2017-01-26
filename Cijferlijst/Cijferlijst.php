@@ -36,7 +36,7 @@ Bestandsnaam:   Cijferlijst.php
         <!--Menu-->
         <header>
             <!--Hoofdtitel-->
-            <h1>Portfolio</h1>
+            <h1>Cijferlijst</h1>
             <!--Navigatie bar-->
             <nav>
                 <ul id="menu">

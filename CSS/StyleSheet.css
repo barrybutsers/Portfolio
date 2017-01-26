@@ -9,7 +9,6 @@
     font-family: "BitMap";
     src: url("../Fonts/BitMap.ttf");
 }
-
 body{
     margin: 0px;
     padding: 0px;
@@ -67,6 +66,9 @@ header h1{
     text-align: center;
     margin: 1% 0;
 }
+header h1:hover{
+    text-shadow: 1px 1px 15px white;
+}
 /*Navigatie bar*/
 header nav{
     z-index: 3;
@@ -91,12 +93,13 @@ header nav ul li a{
     text-decoration: none; 
     color: White;
 }
-header nav ul li a:hover{
+header nav ul li a:hover {
     font-family: 'MrRobot';
     background-color: black;
     color: red;
     margin: auto;
     text-align: center;
+    text-shadow: 1px 1px 15px white;
 }
 /*Positioneren middenstuk*/
 section{
@@ -147,7 +150,7 @@ section article h2{
     font-size: 30px;
     text-align: center;
     color: red;
-    font-weight:100;
+    text-shadow:5px 5px 15px black;
 }
 /*tekst in de article aanpasen*/
 section article p{  
@@ -155,6 +158,39 @@ section article p{
     text-align: center;
     color: white;
     width: 100%;
+}
+section article ul{
+    font-size: 20px;
+    list-style:upper-roman;
+}
+section article ul li{
+    font-size: 20px;
+    color: white;
+}
+hr{
+    border: 2px solid red;
+}
+section article a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        text-align: center;
+}
+section article a:hover{
+    font-family: BitMap;
+}
+/*Foto's article*/
+section article figure img {
+    margin: 10px 10px;
+    max-width: 50%;
+    max-height: 50%;
+    margin: auto 25%;
+    border: 2px solid red;
+}
+section article figure figcaption{
+    font-size: 15px;
+    color: white;
+    text-align: center;
 }
 /*Formulier aanpassen*/
 section article form{

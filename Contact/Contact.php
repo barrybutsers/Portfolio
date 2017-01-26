@@ -1,4 +1,4 @@
-﻿<!--
+<!--
 Opdracht:       Portfolio
 Auteur:         Lars van Alphen
 Aanmaakdatum:   <startdatum + tijd>
@@ -41,7 +41,7 @@ Bestandsnaam:   Contact.html
             <article id="content">
                 <!--Contact formulier-->
                 <h2>Contact formulier</h2>
-                <form method="post" action="Contact.php">
+                <form action="Contact.php" method="post">
                     <label>Naam:</label>
                     <input type="text">
                     <br>
@@ -70,11 +70,12 @@ Bestandsnaam:   Contact.html
                 <?php
                     
                     include "../PHP/Functions.php";
-                    $Mail['to'] = 'Larsvanalphen@outlook.com'; 
-                    $Mail['subject'] = $_POST['Subject']; 
-                    $Mail['body'] = $_POST['Text']; 
 
-                    sendEmail($Mail);
+                    $s['to'] = 'Larsvanalphen@outlook.com'; 
+                    $s['subject'] = $_POST['Subject']; 
+                    $s['body'] = $_POST['Text']; 
+
+                    sendEmail($s);
                 ?>
             </article>
         </section>
